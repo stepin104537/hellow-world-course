@@ -1,0 +1,16 @@
+title: 'Hellow world '
+description: first day fun
+template:
+  repo: hellow-world-template
+  name: hellow-world
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
